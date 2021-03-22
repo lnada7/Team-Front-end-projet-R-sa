@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+/* See https://stackoverflow.com/questions/34691470/responsive-pre-tag */
+pre {
+  text-align: justify;
+  overflow-x: scroll;
+  max-width: 75vw;
+}
+
+@media all and (orientation:landscape){
+  pre {
+    text-align: justify;
+    overflow-x: scroll;
+    max-width: 75vw;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
