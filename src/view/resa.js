@@ -8,18 +8,53 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import PlaceIcon from '@material-ui/icons/Place';
 import WikiIcon from '@material-ui/icons/Language';
 import DocumentIcon from '@material-ui/icons/InsertDriveFile';
+import Image from './association.png';
 
-function resa(){
+
+const useStyles = makeStyles((theme) =>
+	({
+		carre:{
+			backgroundColor: '#cfe8fc',
+			height: '100vh',
+			marginLeft: 0,
+		},
+
+		rectangle:{
+			backgroundColor: '#adef98',
+			height: '20vh',
+			marginLeft:0,
+		}, 
+
+		
+
+	})
+
+);
+
+
+
+
+
+function Resa(){
+	const classes = useStyles();
 
 	return(        
-			<Container >
-				<Typography component="div" style={{ backgroundColor: '#ff0000', marginLeft: 0 }}  />   
+			<Container maxWidth= 'md' fixed > {/* balise pour centré*/}
+				<Typography component="div" style={{ backgroundColor: '#ff0000', height: '100vh', marginLeft: 0 }} >{/* typography qui crée mes composant*/} 
 		       <Container >
-		       		<Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh', marginLeft: 0 }}  />
+		       		<div className = {classes.carre}>
+		       			<div className = {classes.rectangle}>
+
+               			 <img src={Image} alt="Image" width="60" height="60"/>
+          
+		       			</div>
+		       		</div>
+
 		       </Container>
+		       </Typography>
            </Container> 
 	)
 }
 
 
-export default resa;
+export default Resa;
