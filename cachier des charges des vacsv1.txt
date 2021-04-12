@@ -1,0 +1,13 @@
+vue main:
+-positioner les élements ( image, le titre, le filtre, la zone de recherche, la zone grille(grid))
+-stepper : ( texte,mettre texte correctement (ang,fr) ,(si modif la beauté du truc),
+-mettre en place le filtre(bouton filtre)=> m'affiche la zone de filtre, creer les bouton à cocher(action sont pas à definir  
+-grille(grid), à l'interieur ont met des bouton (generateur de bouton( une fonction bouton)
+ 
+-etape pour plutard(pagination, mettre tout les élements sur la pages avec ceux visible et ceux qui sont invisible )
+ 
+vue reservation:
+-faire une belle vue de ce croquis
+-on va voir avec sofia 
+
+les autres vues on verra après
