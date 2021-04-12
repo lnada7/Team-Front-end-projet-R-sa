@@ -8,21 +8,28 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import PlaceIcon from '@material-ui/icons/Place';
 import WikiIcon from '@material-ui/icons/Language';
 import DocumentIcon from '@material-ui/icons/InsertDriveFile';
-import Image from './association.png';
+import Image from '../assets/image/Reservation2.jpg';
+import Stepper from './OutilResa/Stepper'
 
-
+const tailleim = '26px';
 const useStyles = makeStyles((theme) =>
 	({
-		carre:{
-			backgroundColor: '#cfe8fc',
-			height: '100vh',
-			marginLeft: 0,
+		Cadretitre:{
+			//display:'flex',
+			
+			marginLeft:'400px',
+			marginTop:'100px',
+			backgroundColor: '#ff0000',
+			width: '400px',
+			height: '100px',
+
+  			
 		},
 
-		rectangle:{
-			backgroundColor: '#adef98',
-			height: '20vh',
-			marginLeft:0,
+		ImageReservation:{
+			backgroundImage: `url(${Image})`,//j'insère une image en bacground du rectangle
+			height: '200px',
+			margin: 'auto',
 		}, 
 
 		
@@ -38,21 +45,25 @@ const useStyles = makeStyles((theme) =>
 function Resa(){
 	const classes = useStyles();
 
-	return(        
-			<Container maxWidth= 'md' fixed > {/* balise pour centré*/}
-				<Typography component="div" style={{ backgroundColor: '#ff0000', height: '100vh', marginLeft: 0 }} >{/* typography qui crée mes composant*/} 
-		       <Container >
-		       		<div className = {classes.carre}>
-		       			<div className = {classes.rectangle}>
+	return(  
 
-               			 <img src={Image} alt="Image" width="60" height="60"/>
-          
-		       			</div>
-		       		</div>
+			
+				<Container maxWidth ="md" fixed >
 
-		       </Container>
-		       </Typography>
-           </Container> 
+						<div className = {classes.ImageReservation} >
+							<div className = {classes.Cadretitre}>
+
+			       			</div>
+			       		</div>
+						{/**<img src={Image} alt="Image" width="800" height="150"/>*/}{/* j'inserère image de reservation*/}
+						<Stepper/>
+			       	
+			       	
+       			</Container>
+
+		      
+		       
+           
 	)
 }
 
