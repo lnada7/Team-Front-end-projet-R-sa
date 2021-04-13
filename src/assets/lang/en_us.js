@@ -25,5 +25,9 @@ export const local = {
         "/login": "Log in",
         "/resa": "Resa"
     },
-    View: {}
+    View: {},
+
+    RouteResa: {
+        "/Reservation": "BontonReservation",
+    },    
 };
